@@ -17,7 +17,7 @@ const Offers = () => {
     <div className="mt-[80px] md:mt-[150px] flex flex-col font-outfit font-light w-full mx-auto px-4 md:px-0 md:w-[80%] 2xl:w-[70%]">
       <div className="flex flex-col justify-center items-center text-center">
         <Fade className="font-bold text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
-          Mission Statement
+          Problem Statement
         </Fade>
       </div>
 
