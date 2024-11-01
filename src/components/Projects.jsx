@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { gallery } from "../Content/Content";
-import { BiLoaderAlt } from "react-icons/bi";
 
 function Gallery() {
   const [imageLoading, setImageLoading] = useState(true);
@@ -72,15 +71,6 @@ function Gallery() {
               showImageFull ? "opacity-100 " : "opacity-0 scale-95  "
             }`}
           />
-          {/* <p
-            className={` mt-[20px] w-fit bg-white/80 rounded-2xl shadow-lg py-2 px-3 text-xs backdrop-blur-sm text-dark-body-color font-medium transition-all ease-in-out ${
-              showImageFull
-                ? " opacity-100 delay-200"
-                : "opacity-0 -translate-y-3 scale-90"
-            } `}
-          >
-            {act}
-          </p> */}
         </div>
         {/* Hero section */}
         <div className="min-h-[250px] w-full h-full flex flex-col items-center justify-center ">
