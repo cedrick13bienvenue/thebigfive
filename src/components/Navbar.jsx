@@ -3,7 +3,6 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
-import byen_logo from "../assets/byen_logo.png";
 import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -20,10 +19,14 @@ const Navbar = () => {
       <div className="px-4 mx-auto md:w-[80%] 2xl:w-[70%] backdrop-blur-lg bg-black bg-opacity-60 rounded-2xl">
         <div className=" font-light flex flex-row justify-between items-center py-[10px] text-white ">
           <Link to="/">
-            <img src={byen_logo} alt="logo" className="w-[100px]" />
+            <img
+              src="/logo.jpeg"
+              alt="logo"
+              className="w-[70px] rounded-full"
+            />
           </Link>
           <ul className=" hidden lg:flex lg:flex-row md:gap-[50px]">
-            <li>
+            <li className="hover:scale-110 transition">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -34,7 +37,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="hover:scale-105 transition">
+            <li className="hover:scale-110 transition">
               <NavLink
                 to="/team"
                 className={({ isActive }) =>
@@ -45,7 +48,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="hover:scale-105 transition">
+            <li className="hover:scale-110 transition">
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
@@ -56,7 +59,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="hover:scale-105 transition">
+            <li className="hover:scale-110 transition">
               <NavLink
                 to="/resources"
                 className={({ isActive }) =>

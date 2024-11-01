@@ -54,9 +54,9 @@ const About = () => {
           <Slide
             triggerOnce
             direction="up"
-            className="p-2 shadow-lg w-full h-full rounded-[10px] transform transition duration-200 ease-in-out hover:translate-x-1 hover:-translate-y-1 cursor-pointer"
+            className=" shadow-lg w-full h-full rounded-[10px] transform transition duration-200 ease-in-out hover:translate-x-1 hover:-translate-y-1 cursor-pointer"
           >
-            <div className="flex flex-col justify-center text-center items-center border-2 border-black px-[20px] py-[20px]  rounded-[10px]">
+            <div className="flex flex-col justify-center text-center items-center hover:scale-105 transition duration-300 hover:border-[0.5px] hover:border-black px-[20px] py-[20px]  rounded-[10px]">
               <img src={mission} alt="Mission" className="w-[120px] mb-8" />{" "}
               <p className="">
                 We endeavor to transform Rwanda's education system by fostering
@@ -73,7 +73,7 @@ const About = () => {
             direction="up"
             className="p-2 shadow-lg w-full h-full rounded-[10px] transform transition duration-200 ease-in-out hover:translate-x-1 hover:-translate-y-1 cursor-pointer"
           >
-            <div className="flex flex-col justify-center text-center items-center border-2  border-black p-2 px-[20px] py-[20px]  rounded-[10px]">
+            <div className="flex flex-col justify-center text-center items-center hover:scale-105 transition duration-300 hover:border-[0.5px] hover:border-black px-[20px] py-[20px]  rounded-[10px]">
               <img src={vision} alt="Mission" className="w-[120px] mb-8" />{" "}
               <p className="">
                 We envision creating a future where every young Rwandan is

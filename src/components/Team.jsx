@@ -107,6 +107,43 @@ const Team = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
+  // Array of video data
+  const videos = [
+    {
+      id: 1,
+      src: "https://www.youtube.com/embed/y1BewsN8Pbk",
+      title: "Challenge One",
+      heading: "Hunt For Treasure",
+      description:
+        "Based on this information about your financial circumstances, you are eligible to apply for a scholarship. You are yet to be confirmed as eligible for the ALU scholarships based on the remaining ALU Scholarship criteria. After you complete your financial aid application and submit your application, you will receive a final confirmation",
+    },
+    {
+      id: 2,
+      src: "https://www.youtube.com/embed/y1BewsN8Pbk",
+      title: "Challenge Two",
+      heading: "Treasure Hunt Advanced",
+      description:
+        "Based on this information about your financial circumstances, you are eligible to apply for a scholarship. You are yet to be confirmed as eligible for the ALU scholarships based on the remaining ALU Scholarship criteria. After you complete your financial aid application and submit your application, you will receive a final confirmation",
+    },
+    {
+      id: 3,
+      src: "https://www.youtube.com/embed/y1BewsN8Pbk",
+      title: "Challenge Two",
+      heading: "Treasure Hunt Advanced",
+      description:
+        "Based on this information about your financial circumstances, you are eligible to apply for a scholarship. You are yet to be confirmed as eligible for the ALU scholarships based on the remaining ALU Scholarship criteria. After you complete your financial aid application and submit your application, you will receive a final confirmation",
+    },
+    {
+      id: 3,
+      src: "https://www.youtube.com/embed/y1BewsN8Pbk",
+      title: "Challenge Two",
+      heading: "Treasure Hunt Advanced",
+      description:
+        "Based on this information about your financial circumstances, you are eligible to apply for a scholarship. You are yet to be confirmed as eligible for the ALU scholarships based on the remaining ALU Scholarship criteria. After you complete your financial aid application and submit your application, you will receive a final confirmation",
+    },
+    // Add more videos as needed
+  ];
+
   return (
     <div
       style={{
@@ -115,82 +152,79 @@ const Team = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="w-full md:w-[80%] 2xl:w-[70%] xl:px-0 mx-auto p-4 mt-[150px] font-outfit text-light">
-        {/* Tab navigation */}
+      <div className="w-full flex flex-col justify-center items-center md:w-[80%] 2xl:w-[70%] xl:px-0 mx-auto p-4 mt-[150px] font-outfit text-light">
+        {/* Word content */}
+        <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
+          Voyage through the tempest
+        </h1>
+        <p className="justify-center text-center py-10 w-[70%]">
+          In our innovation task force, we tackled six challenges, immersing
+          ourselves in real-world contexts, complex issues, and forward-thinking
+          approaches
+        </p>
+        <div className="mt-5 rounded-[10px] py-[30px] md:py-[50px] px-[20px] md:px-[40px] grid grid-cols-1 gap-[30px] lg:gap-[8rem]">
+          {videos.map((video, index) => (
+            <div
+              key={video.id}
+              className="grid grid-cols-2 justify-items-center gap-[20px]"
+            >
+              {/* Conditionally render description first or video first */}
+              {index % 2 === 0 ? (
+                <>
+                  {/* Video Section */}
+                  <div className="shadow-lg rounded-[20px] w-full">
+                    <iframe
+                      className="w-full h-full rounded-[20px]"
+                      src={video.src}
+                      title={video.heading}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
 
-        {/* Tab content */}
-        {activeTab === "videos" ? (
-          <div>
-            {/* Word content */}
-            <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
-              Voyage through the tempest
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] my-[50px]">
-              {members.map((member) => (
-                <div key={member.id}>
-                  <div className="bg-white border rounded-[15px] py-[30px] px-[20px] bg-opacity-50 backdrop-blur-[1px] flex flex-col justify-center items-center text-center shadow-lg hover:border hover:border-black transform transition">
-                    <img
-                      src={member.profile}
-                      alt="No image"
-                      className="w-[100px] h-[100px] rounded-full border-2 border-black"
-                    />
-                    <h1 className="font-bold text-[20px]">{member.name}</h1>
-                    <p className="text-gray-800">{member.status}</p>
-                    <p className="mt-5 text-[14px] text-gray-600">
-                      {member.bio}
+                  {/* Description Section */}
+                  <div className="flex flex-col justify-start text-left shadow-xl rounded-[20px] p-10">
+                    <h2 className="font-semibold text-[18px] text-gray-600">
+                      {video.title}
+                    </h2>
+                    <h1 className="font-bold text-[30px] ">{video.heading}</h1>
+                    <p className="text-[14px] text-gray-500 mt-2">
+                      {video.description}
                     </p>
                   </div>
-                </div>
-              ))}
-            </div>
-
-            <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black mt-[50px]"></h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] my-[50px]">
-              {supporters.map((supporter) => (
-                <div key={supporter.id}>
-                  <div className="bg-white border rounded-[15px] py-[30px] px-[20px] bg-opacity-50 backdrop-blur-[1px] flex flex-col justify-center items-center text-center shadow-lg hover:border hover:border-black transform transition">
-                    <img
-                      src={supporter.profile}
-                      alt="No image"
-                      className="w-[100px] h-[100px] rounded-full border-2 border-black"
-                    />
-                    <h1 className="font-bold text-[20px]">{supporter.name}</h1>
-                    <p className="text-gray-800">{supporter.status}</p>
-                    <p className="mt-5 text-[14px] text-gray-600">
-                      {supporter.bio}
+                </>
+              ) : (
+                <>
+                  {/* Description Section */}
+                  <div className="flex flex-col justify-start text-left shadow-xl rounded-[20px] p-10">
+                    <h2 className="font-semibold text-[18px] text-gray-600">
+                      {video.title}
+                    </h2>
+                    <h1 className="font-bold text-[30px] ">{video.heading}</h1>
+                    <p className="text-[14px] text-gray-500 mt-2">
+                      {video.description}
                     </p>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="my-[100px]">
-            <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
-              Our Partners
-            </h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] mt-[50px]">
-              {partners.map((partner) => (
-                <div key={partner.id}>
-                  <div className="border shadow-lg  rounded-[15px] bg-gray-100">
-                    <img
-                      src={partner.image}
-                      alt={partner.alt}
-                      className=" rounded-[15px] border w-full h-[300px]"
-                    />
-                    <div className="px-5 py-[10px]">
-                      <h1 className="text-[20px] font-semibold mb-2">
-                        {partner.name}
-                      </h1>
-                      <p className="text-gray-600 font-light">{partner.desc}</p>
-                    </div>
+                  {/* Video Section */}
+                  <div className="shadow-lg rounded-[20px] w-full">
+                    <iframe
+                      className="w-full h-full rounded-[20px]"
+                      src={video.src}
+                      title={video.heading}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    ></iframe>
                   </div>
-                </div>
-              ))}
+                </>
+              )}
             </div>
-          </div>
-        )}
+          ))}
+        </div>
       </div>
     </div>
   );

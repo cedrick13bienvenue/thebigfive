@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import grouppic from "../assets/grouppic.svg";
+import last from "../assets/last.svg";
 
 const Home = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${grouppic})`,
+        backgroundImage: `url(${last})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         width: "100%",
@@ -16,7 +16,7 @@ const Home = () => {
       className="font-outfit relative overflow-hidden flex flex-col justify-center items-center text-center min-h-[100vh] mx-auto px-4 xl:w-[40%]"
     >
       {/* Content */}
-      <h1 className="text-white font-thin text-[60px] md:text-[80px]">
+      <h1 className="text-white font-thin text-[60px] md:text-[80px] mb-10">
         THE BIG <span className="font-medium">FIVE</span>
         <br />
         <span className="font-medium">
@@ -37,11 +37,7 @@ const Home = () => {
         </span>
       </h1>
 
-      <a
-        href="https://form.jotform.com/240665208958062"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="#team">
         <motion.button
           initial="hidden"
           whileHover={{ scale: 1.05, rotate: 5 }}

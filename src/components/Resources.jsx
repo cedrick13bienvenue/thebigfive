@@ -21,96 +21,34 @@ const Projects = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="w-full md:w-[80%] 2xl:w-[70%] xl:px-0 mx-auto p-4 mt-[150px] font-outfit text-light">
-        {/* Tab navigation */}
-        <div className="flex justify-center items-start mb-10"></div>
-
-        {/* Tab content */}
-        {activeTab === "videos" ? (
-          <div>
-            {/* Word content */}
-            <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
-              ELEVATE 5
-            </h1>
-            <p className="mt-[30px] text-[#474747]">
-              A cutting-edge digital platform that equips young Rwandans with
-              essential job skills through interactive courses in ICT,
-              entrepreneurship, communication, and more. We connect students
-              with mentors, offer internships for real-world experience, and
-              provide certifications in partnership with companies to help
-              students secure jobs and drive Rwanda's future growth.
-            </p>
-            <motion.button
-              className="mt-[30px] mb-[50px] bg-black flex flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[10px] rounded-full"
-              initial="hidden"
-              whileHover={{ scale: 1.05, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <p className="text-white">TRY ELEVATE 5</p>
-              <span className="text-black bg-white px-[15px] py-[15px] rounded-full">
-                <FaArrowRight />
-              </span>
-            </motion.button>
-          </div>
-        ) : (
-          <div className="my-[100px]">
-            <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
-              Our Events
-            </h1>
-            <h1 className="text-[28px] md:text-[35px] font-light">
-              <div className="mt-[50px]">
-                <span className="flex flex-col md:flex-row gap-y-[30px] gap-x-[100px]">
-                  <img
-                    src={events}
-                    alt="Keshawn Brown"
-                    className="md:w-[600px] md:h-[400px] rounded-2xl shadow-xl"
-                  />
-                  <p className="text-[13px] font-normal">
-                    <h1 className="mb-[20px] font-bold text-[30px]">
-                      Conscious Choices: Empowering Black Youth Through Mindful
-                      Decision-Making
-                    </h1>
-                    <span className="text-[#474747]">
-                      Hey everyone! We're excited to invite you to a special
-                      webinar hosted by the Black Youth Empowerment Network
-                      (BYEN). Next Monday, we'll be diving into important
-                      conversations about the mental health challenges facing
-                      black youth and how we can shape a brighter future
-                      together. <br /> <br />
-                      This is a fantastic opportunity to hear from professionals
-                      and ask questions that matter to you. Let's come together
-                      as a community to support each other and empower our
-                      youth! Don't miss out—Register now and mark your
-                      calendars. See you there!
-                    </span>
-                    <span className="flex flex-col gap-[10px] mt-[50px] mb-[40px]">
-                      <span className="flex flex-row items-center gap-3">
-                        <FaCalendarAlt className="text-[20px]" />
-                        <p className="font-medium text-[15px]">2024-03-25</p>
-                      </span>
-                      <span className="flex flex-row items-center gap-3">
-                        <IoTimerOutline className="text-[20px]" />
-                        <p className="font-medium text-[15px]">
-                          7:00 pm - 8:00 pm (EDT)
-                        </p>
-                      </span>
-                      <span className="flex flex-row items-center gap-3">
-                        <IoLocation className="text-[20px]" />
-                        <p className="font-medium text-[15px]">
-                          Zoom (Register NOW with the link below)
-                        </p>
-                      </span>
-                    </span>
-                    <span className="text-[#474747]">
-                      😍 💕Join us for an insightful discussion on black youth
-                      mental health and empowerment!
-                    </span>
-                  </p>
-                </span>
-              </div>
-            </h1>
-          </div>
-        )}
+      <div className=" grid grid-cols-1 md:grid-cols-2 w-full md:w-[80%] 2xl:w-[70%] xl:px-0 mx-auto p-4 mt-[150px] font-outfit text-light">
+        <div>
+          <h1 className="font-bold text-[40px] md:text-[60px] relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:w-1/2 after:border-b-2 after:border-black">
+            IGA -elevate 5
+          </h1>
+          <p className="mt-[30px] text-[#474747]">
+            A cutting-edge digital platform that equips young Rwandans with
+            essential job skills through interactive courses in ICT,
+            entrepreneurship, communication, and more. We connect students with
+            mentors, offer internships for real-world experience, and provide
+            certifications in partnership with companies to help students secure
+            jobs and drive Rwanda's future growth.
+          </p>
+          <motion.button
+            className="mt-[30px] mb-[50px] bg-black flex flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[10px] rounded-full"
+            initial="hidden"
+            whileHover={{ scale: 1.05, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <p className="text-white">TRY IGA</p>
+            <span className="text-black bg-white px-[15px] py-[15px] rounded-full">
+              <FaArrowRight />
+            </span>
+          </motion.button>
+        </div>
+        <div>
+          <img src="./f7.JPG" className="rounded-3xl shadow-3xl mb-10"></img>
+        </div>
       </div>
     </div>
   );
