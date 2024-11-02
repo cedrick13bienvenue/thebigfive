@@ -1,65 +1,54 @@
 import React from "react";
-import { BiSolidPhoneCall } from "react-icons/bi";
-import { FaFacebook, FaYoutube } from "react-icons/fa6";
-import { FiInstagram } from "react-icons/fi";
-import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="w-full py-14 bg-black text-white font-outfit">
+    <footer class="w-full bg-black text-white font-outfit">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto">
-          <a href="/" class="flex justify-center ">
-            <img src="/logo.svg" alt="Logo" />
-          </a>
           <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-16 mb-10 border-b border-gray-200">
             <li>
-              <a href="#" class=" hover:gray-500">
-                Pagedone
+              <a href="#about" class=" hover:gray-500">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#problem" class="  hover:gray-500">
+                Problem & Mission
               </a>
             </li>
             <li>
               <a href="#" class="  hover:gray-500">
-                Products
+                IGA
               </a>
             </li>
             <li>
-              <a href="#" class="  hover:gray-500">
-                Resources
-              </a>
-            </li>
-            <li>
-              <a href="#" class="  hover:gray-500">
-                Blogs
-              </a>
-            </li>
-            <li>
-              <a href="#" class="  hover:gray-500">
-                Support
+              <a href="#team" class="  hover:gray-500">
+                Team
               </a>
             </li>
           </ul>
           <div class="flex space-x-10 justify-center items-center mb-14">
             <a
-              href="#"
-              class="block  gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer "
+              href="mailto:thebigfivealu@gmail.com"
+              class="block gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer"
+              target="_blank"
             >
               <svg
                 class="w-[1.688rem] h-[1.688rem]"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
+                viewBox="0 0 24 24"
                 fill="none"
               >
                 <path
-                  d="M11.3214 8.93666L16.4919 3.05566H15.2667L10.7772 8.16205L7.1914 3.05566H3.05566L8.47803 10.7774L3.05566 16.9446H4.28097L9.022 11.552L12.8088 16.9446H16.9446L11.3211 8.93666H11.3214ZM9.64322 10.8455L9.09382 10.0765L4.72246 3.95821H6.60445L10.1322 8.8959L10.6816 9.66481L15.2672 16.083H13.3852L9.64322 10.8458V10.8455Z"
+                  d="M20 4H4C2.89 4 2.01 4.9 2.01 6L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.75l-8 5-8-5V6l8 5 8-5v2.75z"
                   fill="currentColor"
                 />
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/thebigfive_alu/"
               class="block  gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer "
+              target="_blank"
             >
               <svg
                 class="w-[1.688rem] h-[1.688rem] "
@@ -74,24 +63,26 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="#"
-              class="block  gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer "
+              href="tel:+250798920076"
+              class="block gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer"
+              target="_blank"
             >
               <svg
-                class="w-[0.938rem] h-[1.625rem]"
-                viewBox="0 0 15 26"
-                fill="none"
+                class="w-[1.688rem] h-[1.688rem]"
                 xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
               >
                 <path
-                  d="M13.7926 14.4697L14.5174 9.86889H10.0528V6.87836C10.0528 5.62033 10.6761 4.39105 12.6692 4.39105H14.7275V0.473179C13.5289 0.282204 12.3177 0.178886 11.1037 0.164062C7.42917 0.164062 5.0302 2.37101 5.0302 6.36077V9.86889H0.957031V14.4697H5.0302V25.5979H10.0528V14.4697H13.7926Z"
+                  d="M6.62 10.79a15.17 15.17 0 006.59 6.59l2.2-2.2a1.54 1.54 0 011.54-.37c1.07.34 2.22.53 3.41.53a1.53 1.53 0 011.53 1.53v3.07a1.53 1.53 0 01-1.53 1.53C11.07 22.5 1.5 12.93 1.5 4.5A1.53 1.53 0 013.03 3h3.07A1.53 1.53 0 017.63 4.5c0 1.19.18 2.34.53 3.41.2.5.06 1.07-.37 1.54l-2.2 2.2z"
                   fill="currentColor"
                 />
               </svg>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@thebigfive_alu"
               class="block  gray-500 transition-all duration-500 hover:text-gray-500 cursor-pointer "
+              target="_blank"
             >
               <svg
                 class="w-[1.875rem] h-[1.375rem]"
@@ -109,7 +100,7 @@ const Footer = () => {
             </a>
           </div>
           <span class="text-lg gray-500 text-center block">
-            ©<a href="https://pagedone.io/">pagedone</a> 2024, All rights
+            ©<a href="https://pagedone.io/">thebigfive</a> 2024, All rights
             reserved.
           </span>
         </div>

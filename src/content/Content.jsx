@@ -1,7 +1,7 @@
 export const gallery = {
-  SectionTitle: "Gallery",
+  SectionTitle: "Moments in Time",
   SectionDescription:
-    "Memorable experiences. From milestones to everyday interactions and fun moments.",
+    "Cherished Experiences: proud victories, simple enjoyments and happy times",
   Images: [
     {
       url: "/f1.JPG",
