@@ -82,7 +82,9 @@ const ElabChallenges = () => {
             opacity: 0,
           }}
         >
-          In our innovation task force, we tackled six challenges...
+          In our innovation task force, we tackled six challenges, immersing
+          ourselves in real-world contexts, complex issues, and forward-thinking
+          approaches
         </p>
 
         <div className="mt-5 rounded-[10px] py-[30px] md:py-[50px] px-[20px] md:px-[40px] grid grid-cols-1 gap-[30px] lg:gap-[8rem] fade-in">
