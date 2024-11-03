@@ -10,7 +10,6 @@ const gallery = {
   SectionDescription:
     "Cherished Experiences: proud victories, simple enjoyments and happy times",
   Images: [
-    { pic: "/f1.JPG" },
     { pic: "/d7.JPG" },
     { pic: "/f4.jpeg" },
     { pic: "/d6.JPG" },
@@ -23,7 +22,6 @@ const gallery = {
     { pic: "/c7.JPG" },
     { pic: "/d1.JPG" },
     { pic: "/d4.JPG" },
-    { pic: "/d7.JPG" },
     { pic: "/d8.JPG" },
     { pic: "/d9.JPG" },
     { pic: "/e2.JPG" },
