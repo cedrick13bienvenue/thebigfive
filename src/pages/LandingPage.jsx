@@ -1,21 +1,21 @@
 import React from "react";
 import Home from "../components/Home";
 import About from "../components/About";
-import Offers from "../components/Offers";
-import Join from "../components/Join";
-import Latest from "../components/Latest";
+import Offers from "../components/ProblemStatement";
+import Join from "../components/Mission";
+import Latest from "../components/Team";
 import whole from "../assets/whole.svg";
 import { motion, useScroll, useSpring, useInView } from "framer-motion";
 
 // Scale and rotate animation with delay
 const scaleRotateAnimation = (delay = 0) => ({
-  initial: { scale: 0.8, rotate: -15, opacity: 0 },  // Start small and rotated
-  animate: { scale: 1, rotate: 0, opacity: 1 },      // Full size and upright
+  initial: { scale: 0.8, rotate: -15, opacity: 0 }, // Start small and rotated
+  animate: { scale: 1, rotate: 0, opacity: 1 }, // Full size and upright
   transition: {
-    duration: 0.8,                                   // Smooth transition
-    ease: "easeInOut",                               // Easing for polished animation
-    delay: delay                                     // Delay for staggering
-  }
+    duration: 0.8, // Smooth transition
+    ease: "easeInOut", // Easing for polished animation
+    delay: delay, // Delay for staggering
+  },
 });
 
 const LandingPage = () => {
@@ -37,9 +37,13 @@ const LandingPage = () => {
       <motion.div
         ref={ref}
         initial={scaleRotateAnimation(delay).initial}
-        animate={inView ? scaleRotateAnimation(delay).animate : scaleRotateAnimation(delay).initial}
+        animate={
+          inView
+            ? scaleRotateAnimation(delay).animate
+            : scaleRotateAnimation(delay).initial
+        }
         transition={scaleRotateAnimation(delay).transition}
-        style={{ marginBottom: "2rem" }}  // Spacing between sections
+        style={{ marginBottom: "2rem" }} // Spacing between sections
       >
         {children}
       </motion.div>
@@ -62,9 +66,9 @@ const LandingPage = () => {
           scaleX,
         }}
       />
-      
+
       {/* Home Section */}
-        <Home />
+      <Home />
 
       <div
         style={{
@@ -74,10 +78,10 @@ const LandingPage = () => {
         }}
         className="w-full overflow-hidden"
       >
-          <About />
-          <Offers />
-          <Join />
-          <Latest />
+        <About />
+        <Offers />
+        <Join />
+        <Latest />
       </div>
     </>
   );

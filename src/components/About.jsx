@@ -1,15 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import aboutPic from "../assets/aboutPic.jpeg";
-import { FaArrowRight } from "react-icons/fa6";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
 import mission from "../assets/mission.svg";
 import vision from "../assets/vision.svg";
 import { Fade, Slide } from "react-awesome-reveal";

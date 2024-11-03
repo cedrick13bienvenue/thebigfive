@@ -113,7 +113,7 @@ const Navbar = () => {
                   isActive ? activeLink : normalLink
                 }
               >
-                Our Team
+                E`Lab Challenges
               </NavLink>
             </li>
             <li className="hover:scale-105 transition">
@@ -123,7 +123,7 @@ const Navbar = () => {
                   isActive ? activeLink : normalLink
                 }
               >
-                Resources
+                Prototype
               </NavLink>
             </li>
             <li className="hover:scale-105 transition">
@@ -133,7 +133,7 @@ const Navbar = () => {
                   isActive ? activeLink : normalLink
                 }
               >
-                Projects
+                Archive
               </NavLink>
             </li>
             <motion.button

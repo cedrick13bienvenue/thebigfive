@@ -100,8 +100,7 @@ const Footer = () => {
             </a>
           </div>
           <span class="text-lg gray-500 text-center block">
-            ©<a href="https://pagedone.io/">thebigfive</a> 2024, All rights
-            reserved.
+            ©<a href="#">thebigfive</a> 2024, All rights reserved.
           </span>
         </div>
       </div>
