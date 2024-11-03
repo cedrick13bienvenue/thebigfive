@@ -1,10 +1,8 @@
-// Archive.jsx
 import React, { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-// Gallery data included directly in the Archive file
 const gallery = {
   SectionTitle: "Moments in Time",
   SectionDescription:
