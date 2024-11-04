@@ -34,6 +34,12 @@ const gallery = {
     { pic: "/h2.jpeg" },
     { pic: "/h3.jpeg" },
     { pic: "/h4.jpeg" },
+    { pic: "/h5.jpeg" },
+    { pic: "/h6.jpeg" },
+    { pic: "/h7.jpeg" },
+    { pic: "/h8.jpeg" },
+    { pic: "/h9.jpeg" },
+    { pic: "/i1.jpeg" },
   ],
 };
 
