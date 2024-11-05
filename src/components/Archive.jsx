@@ -52,7 +52,23 @@ function Archive() {
   const [randomImages, setRandomImages] = useState([]);
   const audioRef = useRef(null);
 
-  const audioFiles = ["/song1.mp3", "/song2.mp3", "/song3.mp3"];
+  const audioFiles = [
+    "/song1.mp3",
+    "/song2.mp3",
+    "/song3.mp3",
+    "/song4.mp3",
+    "/song5.mp3",
+    "/song6.mp3",
+    "/song7.mp3",
+    "/song8.mp3",
+    "/song9.mp3",
+    "/song10.mp3",
+    "/song11.mp3",
+    "/song12.mp3",
+    "/song13.mp3",
+    "/song14.mp3",
+    "/song15.mp3",
+  ];
 
   // Function to select a random song
   const playRandomSong = () => {
