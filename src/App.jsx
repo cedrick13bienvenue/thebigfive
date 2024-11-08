@@ -18,7 +18,6 @@ function App() {
         <Route path="/projects" element={<Archive />} />
         <Route path="/resources" element={<Prototype />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

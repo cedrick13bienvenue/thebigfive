@@ -6,6 +6,7 @@ import Join from "../components/Mission";
 import Latest from "../components/Team";
 import whole from "../assets/whole.svg";
 import { motion, useScroll, useSpring, useInView } from "framer-motion";
+import Footer from "@/components/Footer";
 
 // Scale and rotate animation with delay
 const scaleRotateAnimation = (delay = 0) => ({
@@ -82,6 +83,7 @@ const LandingPage = () => {
         <Offers />
         <Join />
         <Latest />
+        <Footer />
       </div>
     </>
   );

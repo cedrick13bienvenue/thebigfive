@@ -1,5 +1,6 @@
 import React from "react";
 import whole from "../assets/whole.svg";
+import Footer2 from "./Footer2";
 
 const ElabChallenges = () => {
   const videos = [
@@ -204,6 +205,7 @@ const ElabChallenges = () => {
           ))}
         </div>
       </div>
+      <Footer2></Footer2>
     </div>
   );
 };

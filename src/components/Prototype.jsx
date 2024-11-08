@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa6";
 import whole from "../assets/whole.svg";
+import Footer2 from "./Footer2";
 
 const Prototype = () => {
   return (
@@ -60,6 +61,7 @@ const Prototype = () => {
           />
         </motion.div>
       </div>
+      <Footer2 />
     </motion.div>
   );
 };
