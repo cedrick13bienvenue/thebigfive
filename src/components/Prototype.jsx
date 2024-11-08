@@ -36,16 +36,18 @@ const Prototype = () => {
           </p>
 
           {/* Button with Animation */}
-          <motion.button
-            className="mt-[30px] mb-[50px] bg-black flex flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[10px] rounded-full"
-            whileHover={{ scale: 1.05, rotate: 5 }}
-            transition={{ duration: 0.2 }}
-          >
-            <p className="text-white">TRY IGA</p>
-            <span className="text-black bg-white px-[15px] py-[15px] rounded-full">
-              <FaArrowRight />
-            </span>
-          </motion.button>
+          <a href="https://iga-platform.vercel.app" target="_blank">
+            <motion.button
+              className="mt-[30px] mb-[50px] bg-black flex flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[10px] rounded-full"
+              whileHover={{ scale: 1.05, rotate: 5 }}
+              transition={{ duration: 0.2 }}
+            >
+              <p className="text-white">TRY IGA</p>
+              <span className="text-black bg-white px-[15px] py-[15px] rounded-full">
+                <FaArrowRight />
+              </span>
+            </motion.button>
+          </a>
         </motion.div>
 
         {/* Right Section - Image with Animation */}

@@ -17,7 +17,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" class="  hover:gray-500">
+              <a
+                href="https://iga-platform.vercel.app"
+                class="  hover:gray-500"
+                target="_blank"
+              >
                 IGA
               </a>
             </li>
