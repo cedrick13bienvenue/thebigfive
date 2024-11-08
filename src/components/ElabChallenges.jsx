@@ -38,7 +38,7 @@ const ElabChallenges = () => {
     },
     {
       id: 5,
-      src: "https://www.youtube.com/embed/qBD4zgUuAoc",
+      src: "https://www.youtube.com/embed/jdhiI1vmK0w",
       title: "Challenge 5",
       heading: "Mission Voyage",
       description:
