@@ -65,9 +65,7 @@ function Archive() {
     "/song9.mp3",
     "/song10.mp3",
     "/song11.mp3",
-    "/song12.mp3",
     "/song13.mp3",
-    "/song14.mp3",
     "/song15.mp3",
   ];
 
