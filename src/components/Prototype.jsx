@@ -36,7 +36,10 @@ const Prototype = () => {
           </p>
 
           {/* Button with Animation */}
-          <a href="https://iga-platform.vercel.app" target="_blank">
+          <a
+            href="https://www.figma.com/proto/4I204ulxRhA2DlAeQXB8TG/Untitled?node-id=24-142&t=DYqqBJLSvKD8jxXz-1&starting-point-node-id=24%3A142"
+            target="_blank"
+          >
             <motion.button
               className="mt-[30px] mb-[50px] bg-black flex flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[10px] rounded-full"
               whileHover={{ scale: 1.05, rotate: 5 }}
