@@ -37,7 +37,7 @@ const Prototype = () => {
 
           {/* Button with Animation */}
           <a
-            href="https://iga-plum.vercel.app/"
+            href="https://iga-platform.vercel.app/"
             target="_blank"
           >
             <motion.button
