@@ -104,7 +104,7 @@ const Footer = () => {
             </a>
           </div>
           <span class="text-lg gray-500 text-center block">
-            ©<a href="#">thebigfive</a> 2024, All rights reserved.
+            ©<a href="#">thebigfive</a> 2025, All rights reserved.
           </span>
         </div>
       </div>
