@@ -18,7 +18,7 @@ const Footer2 = () => {
             </li>
             <li>
               <a
-                href="https://www.figma.com/proto/4I204ulxRhA2DlAeQXB8TG/Untitled?node-id=24-142&t=DYqqBJLSvKD8jxXz-1&starting-point-node-id=24%3A142"
+                href="https://iga-platform.vercel.app/"
                 class="  hover:gray-500"
                 target="_blank"
               >

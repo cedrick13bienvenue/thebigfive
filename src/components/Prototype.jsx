@@ -37,7 +37,7 @@ const Prototype = () => {
 
           {/* Button with Animation */}
           <a
-            href="https://www.figma.com/proto/4I204ulxRhA2DlAeQXB8TG/Untitled?node-id=24-142&t=DYqqBJLSvKD8jxXz-1&starting-point-node-id=24%3A142"
+            href="https://iga-platform.vercel.app/"
             target="_blank"
           >
             <motion.button
