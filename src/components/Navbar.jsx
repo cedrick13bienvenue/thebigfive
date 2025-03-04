@@ -137,14 +137,17 @@ const Navbar = () => {
               </NavLink>
             </li>
             <motion.button
+              onClick={() =>
+                document
+                  .getElementById("footer")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
               className="font-light flex bg-white flex-row items-center justify-center gap-[20px] pl-[30px] pr-[10px] py-[8px] rounded-full"
               initial="hidden"
               whileHover={{ scale: 1.05, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
             >
-              <p href="#footer" className="text-black">
-                GET IN TOUCH
-              </p>
+              <p className="text-black">GET IN TOUCH</p>
               <span className="bg-black px-[10px] py-[10px] rounded-full">
                 <FaArrowRight />
               </span>
